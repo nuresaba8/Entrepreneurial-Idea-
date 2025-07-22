@@ -1,3 +1,59 @@
+🧑‍⚖️ Judge Management System (NestJS + PostgreSQL)
+This project is a Judge Management System built with NestJS and PostgreSQL. It allows for full CRUD operations on judge data and features robust role-based associations, validation, and email notifications.
+
+✨ Key Features
+Create and manage judge profiles with secure password hashing
+
+Assign collaborators (one-to-many relationship)
+
+Associate feedback, notifications, and presentation ratings with judges
+
+Set judge status (active or inactive) with validation and default values
+
+Retrieve judges based on conditions like age and status
+
+Send reset codes via email for password recovery
+
+Automatically store notifications on judge actions (e.g., login)
+
+Use real-time date values in notification entities
+
+Built-in data validation using class-validator
+
+Fully modular and scalable architecture
+
+🧱 Tech Stack
+Frontend: Next.Js
+
+Backend: NestJS (TypeScript)
+
+Database: PostgreSQL with TypeORM
+
+Validation: class-validator
+
+Mailer: @nestjs-modules/mailer (Gmail SMTP)
+
+🔐 Security
+Passwords are hashed using bcrypt
+
+Custom validation and error messages for inputs
+
+Real-time logging and error handling via NestJS's exception filters
+
+📩 Example Use Cases
+Sign up judges and generate linked profile entries
+
+Manage collaborations and feedback across judges
+
+Trigger and retrieve judge-related notifications
+
+Restrict status to valid values only (active, inactive)
+
+Query judges above a certain age (e.g., over 40)
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
